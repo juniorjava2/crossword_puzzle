@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+
+}
+td {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 0, 0, 0.37);
+  border: 1px solid black;
+  position: relative;
+  cursor: grab;
+  
+}
+td.b {
+  background: black;
+  cursor: not-allowed;
+
+}
+td.w {
+  background: white;
+}
+td.w:hover {
+  background: rgba(255, 179, 179, 0.37);
+}
+td span {
+  font-size: 10px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+td b {
+  font-size: 30px;
+  color: green;
+}
+button {
+  width: 150px;
+  height: 40px;
+  margin: 15px;
+  background: rgb(91, 91, 235);
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  border: none;
+}
+button:hover {
+  background: green;
+  color: white;
+  transition: 1s;
+}
+.controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 2rem;
+  background: rgb(24, 146, 184);
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.direction {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.controls .buttons{
+  margin-left: 3.5rem;
+}
+.direction label {
+  margin-right: 1rem;
+}
